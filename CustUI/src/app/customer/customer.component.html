@@ -1,0 +1,33 @@
+<div class="container">
+
+
+
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>Local Reference</th>
+      <th>Name</th>
+      <th>Current Date</th>
+      <th>Pervious Date</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let customer of customers">
+
+      <td><span>{{customer.loc_ref}}</span></td>
+      <td><span>{{customer.name}}</span></td>
+      <td><span>{{customer.currentDate  }} </span></td>
+      <td><span>{{customer.previousDate }}</span></td>
+      <td>
+        <a href="/home"
+           role="button"
+           class="btn btn-info text-center">
+          Submit
+        </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
